@@ -15,7 +15,7 @@ sock=socket.socket(socket.AF_INET,socket.SOCK_DGRAM)
 packet=random._urandom(1490)
 
 port=int(input(" \u001b[31mWhich port would you like to use: "))
-sent = None
+sent = 0
 packetwith=int(input(" \u001b[34mHow many packages should you send: "))
 
 for i in range(packetwith):
