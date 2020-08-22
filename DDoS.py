@@ -17,7 +17,9 @@ class dosattack():
     def __len__(self):
         return self.packets
 
-print("""
+while True:
+	try:
+		print("""
          \u001b[36m______________________________________________________
 
                 \u001b[36mW E L C O M E  \u001b[31;1mD D O S  \u001b[36mS C R I P T
@@ -25,11 +27,17 @@ print("""
                     \u001b[37mCreated by \u001b[36mFerhat ERTURK
         ______________________________________________________
                     """)
-time.sleep(2)
-ipp=input(" \u001b[32;1mSystem Ip Address:\u001b[35;1m ")
-pport=int(input(" \u001b[32;1mWhich Port:\u001b[35;1m "))
-packetss=int(input(" \u001b[32;1mHow Many Packages:\u001b[35;1m "))
-os.system("cls")
+		time.sleep(3)
+		ipp=input(" \u001b[32;1mSystem Ip Address:\u001b[35;1m ")
+		pport=int(input(" \u001b[32;1mWhich Port:\u001b[35;1m "))
+		packetss=int(input(" \u001b[32;1mHow Many Packages:\u001b[35;1m "))
+		os.system("cls")
+		break
+	except ValueError:
+		print("\n \u001b[31mPlease enter a number!")
+		time.sleep(2)
+		os.system("cls")
+
 print("""
          \u001b[36m______________________________________________________
 
@@ -69,5 +77,3 @@ print("""
 print(atak1)
 print("\n \u001b[32mAttack Completed...")
 input()
-
-
